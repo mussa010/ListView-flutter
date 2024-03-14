@@ -38,11 +38,19 @@ class _PrincipalViewState extends State<PrincipalView> {
           //Aparência de cada item
           itemBuilder: (context, index) {
             return Card(
-              color: Colors.cyan,
+              color: Colors.blue.shade50,
               child: ListTile(
                 leading: Icon(Icons.person),
                 title: Text(lista[index].nome),
                 subtitle: Text(lista[index].email),
+
+                hoverColor: Colors.red.shade50,
+                //pressionar um item da lista
+                onTap: () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text(lista[index].nome)),
+                  );
+                },
               ),
             );
           },
