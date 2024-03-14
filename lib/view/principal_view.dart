@@ -53,7 +53,9 @@ class _PrincipalViewState extends State<PrincipalView> {
                 },
                 //remover item da lista
                 onLongPress: () {
-                  lista.removeAt(index);
+                  setState(() {
+                    lista.removeAt(index);
+                  });
                 },
               ),
             );
