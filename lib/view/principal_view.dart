@@ -51,6 +51,10 @@ class _PrincipalViewState extends State<PrincipalView> {
                     SnackBar(content: Text(lista[index].nome)),
                   );
                 },
+                //remover item da lista
+                onLongPress: () {
+                  lista.removeAt(index);
+                },
               ),
             );
           },
