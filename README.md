@@ -1,3 +1,3 @@
 # app06
 
-A new Flutter project.
+Aplicativo desenvolvido para aprendizagem de ListView
