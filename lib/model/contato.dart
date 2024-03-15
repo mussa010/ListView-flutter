@@ -12,8 +12,7 @@ class Contato {
     lista.add(Contato('José Antônio', 'jose@email.com'));
     lista.add(Contato('Ana Maria', 'ana@email.com'));
     lista.add(Contato('Carla Fernanda', 'carla@email.com'));
+
     return lista;
   }
-
-  
 }
